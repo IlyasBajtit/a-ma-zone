@@ -7,11 +7,7 @@ settings:
 dependencies:
   '@nestjs/common':
     specifier: ^10.2.10
-<<<<<<< HEAD
-    version: 10.2.10(reflect-metadata@0.1.13)(rxjs@7.8.1)
-=======
     version: 10.2.10(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
->>>>>>> 4b8d338e4e9c987e54253f36a1bb8bdee2f9a749
   '@nestjs/core':
     specifier: ^10.2.10
     version: 10.2.10(@nestjs/common@10.2.10)(@nestjs/platform-express@10.2.10)(reflect-metadata@0.1.13)(rxjs@7.8.1)
