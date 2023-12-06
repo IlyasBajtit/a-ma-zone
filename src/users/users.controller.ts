@@ -1,12 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  Patch,
-  Param,
-  Delete,
-} from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { ApiTags } from '@nestjs/swagger';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -35,18 +27,6 @@ export class UsersController {
     return this.usersService.getByUUID(uuid);
   }
 
-<<<<<<< HEAD
-  @Patch(':uuid')
-  update(@Param('uuid') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
-  }
-
-  @Delete(':uuid')
-  remove(@Param('uuid') id: string) {
-    return this.usersService.remove(+id);
-  }
-}
-=======
   // @Get(':uuid/products')
   // public getProductsByUserUUID(@Param('uuid') uuid: string) {
   //   return this.productsService.getProductsByUserUUID(uuid);
@@ -70,4 +50,3 @@ export class UsersController {
   //   return this.productsService.deleteProductsByUserUUID(uuid);
   // }
 }
->>>>>>> 4356d64d395181e18b5f7ab3a3af45ad96ee7a62
