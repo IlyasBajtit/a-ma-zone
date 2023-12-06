@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-export class CreateUserDto {
-    pseudo: string;
-    mail: string;
-  }
-=======
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsString, IsDate, Length } from 'class-validator';
 
@@ -41,4 +35,3 @@ export class CreateUserDto {
   @IsDate()
   created_at : Date;
 }
->>>>>>> 4356d64d395181e18b5f7ab3a3af45ad96ee7a62
