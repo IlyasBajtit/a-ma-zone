@@ -1,15 +1,12 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { ApiTags } from '@nestjs/swagger';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { ProductsService } from 'src/products/products.service';
 
 @Controller('users')
 export class UsersController {
   constructor(
     private readonly usersService: UsersService,
-   /*  private readonly productsService: ProductsService, */
   ) {}
 
   @Post()
@@ -27,11 +24,6 @@ export class UsersController {
     return this.usersService.getByUUID(uuid);
   }
 
-  // @Get(':uuid/products')
-  // public getProductsByUserUUID(@Param('uuid') uuid: string) {
-  //   return this.productsService.getProductsByUserUUID(uuid);
-  // }
-
   @Patch(':uuid')
   public updateByUUID(
     @Param('uuid') uuid: string,
@@ -44,9 +36,13 @@ export class UsersController {
   public deleteByUUID(@Param('uuid') uuid: string) {
     return this.usersService.deleteByUUID(uuid);
   }
+<<<<<<< HEAD
 
   // @Delete(':uuid/products')
   // public deleteProductsByUserUUID(@Param('uuid') uuid: string) {
   //   return this.productsService.deleteProductsByUserUUID(uuid);
   // }
 }
+=======
+}
+>>>>>>> 9467fa99cc7a57beb01aa7ed514fa23389f611cc
